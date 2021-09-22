@@ -20,8 +20,24 @@ class BreedFetcher: ObservableObject {
     func fetchAllBreeds() {
         
         isLoading = true
+        errorMessage = nil
         
-   
+        let service = APIService()
+        let url = URL(string: "https://api.thecatapi.com/v1/breeds")
+        
+        service.fetchBreeds(url: url) {[unowned self] result in
+            
+            self.isLoading = false
+            
+            switch result {
+            case .failure(let error):
+                self.errorMessage = error.localizedDescription
+                print(error)
+            case .success(let breeds):
+                self.breeds = breeds
+            }
+            
+        }
         
     }
     
