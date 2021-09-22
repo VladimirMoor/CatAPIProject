@@ -21,6 +21,7 @@
 		31EEA0E926FB596F00B73D84 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EEA0E826FB596F00B73D84 /* ErrorView.swift */; };
 		31EEA0EB26FB598800B73D84 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EEA0EA26FB598800B73D84 /* LoadingView.swift */; };
 		31EEA0ED26FB76AD00B73D84 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EEA0EC26FB76AD00B73D84 /* APIError.swift */; };
+		31EEA0EF26FB7E5900B73D84 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EEA0EE26FB7E5900B73D84 /* APIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		31EEA0E826FB596F00B73D84 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		31EEA0EA26FB598800B73D84 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		31EEA0EC26FB76AD00B73D84 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		31EEA0EE26FB7E5900B73D84 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 			children = (
 				31EEA0E426FB564500B73D84 /* BreedFetcher.swift */,
 				31EEA0EC26FB76AD00B73D84 /* APIError.swift */,
+				31EEA0EE26FB7E5900B73D84 /* APIService.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				31EEA0E526FB564500B73D84 /* BreedFetcher.swift in Sources */,
 				31EEA0E926FB596F00B73D84 /* ErrorView.swift in Sources */,
 				31EEA0EB26FB598800B73D84 /* LoadingView.swift in Sources */,
+				31EEA0EF26FB7E5900B73D84 /* APIService.swift in Sources */,
 				31EEA0B426FB522A00B73D84 /* CatAPIProjectApp.swift in Sources */,
 				31EEA0E726FB595300B73D84 /* BreedListView.swift in Sources */,
 				31EEA0ED26FB76AD00B73D84 /* APIError.swift in Sources */,
