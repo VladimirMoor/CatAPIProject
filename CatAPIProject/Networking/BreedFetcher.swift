@@ -25,7 +25,7 @@ class BreedFetcher: ObservableObject {
         let service = APIService()
         let url = URL(string: "https://api.thecatapi.com/v1/breeds")
         
-        service.fetchBreeds(url: url) {[unowned self] result in
+        service.fetchBreeds(url: url) { [unowned self] result in
             
             DispatchQueue.main.async {
                 

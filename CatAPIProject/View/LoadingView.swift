@@ -11,7 +11,7 @@ struct LoadingView: View {
     var body: some View {
         
         VStack {
-            Text("🐱")
+            Text("😺")
                 .font(.system(size: 80))
             ProgressView()
                 .padding()
