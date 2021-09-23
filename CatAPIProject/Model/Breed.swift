@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct Breed: Codable {
+struct Breed: Codable, Identifiable {
     
     let id: String
     let name: String

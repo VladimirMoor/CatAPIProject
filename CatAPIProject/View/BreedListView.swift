@@ -11,12 +11,25 @@ struct BreedListView: View {
     let breeds: [Breed]
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+        List {
+            ForEach(breeds) { breed in
+                
+                NavigationLink {
+                    BreedDetailView(breed: breed)
+                } label: {
+                    BreedRow(breed: breed)
+                }
+            }
+        }
+        .listStyle(.plain)
+        .navigationTitle("Find your favorite cat")
+      }
     }
 }
 
 struct BreedListView_Previews: PreviewProvider {
     static var previews: some View {
-        BreedListView(breeds: [])
+        BreedListView(breeds: BreedFetcher.successState().breeds)
     }
 }
