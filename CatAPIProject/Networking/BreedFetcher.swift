@@ -27,16 +27,17 @@ class BreedFetcher: ObservableObject {
         
         service.fetchBreeds(url: url) {[unowned self] result in
             
-            self.isLoading = false
-            
-            switch result {
-            case .failure(let error):
-                self.errorMessage = error.localizedDescription
-                print(error)
-            case .success(let breeds):
-                self.breeds = breeds
+            DispatchQueue.main.async {
+                
+                self.isLoading = false
+                switch result {
+                case .failure(let error):
+                    self.errorMessage = error.localizedDescription
+                    print(error)
+                case .success(let breeds):
+                    self.breeds = breeds
+                }
             }
-            
         }
         
     }

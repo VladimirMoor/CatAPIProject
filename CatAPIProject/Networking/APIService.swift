@@ -69,7 +69,6 @@ struct APIService {
                 
                  do {
                      let breeds = try decoder.decode([Breed].self, from: data)
-                     
                      completion(Result.success(breeds))
                      
                  } catch {
