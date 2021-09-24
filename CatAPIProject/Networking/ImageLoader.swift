@@ -21,6 +21,9 @@ class ImageLoader: ObservableObject {
     }
     
     func fetch() {
+        
+        guard image == nil && !isLoading else { return }
+        
         guard let url = url else {
             errorMessage = APIError.badURL.localizedDescription
             return
@@ -30,22 +33,22 @@ class ImageLoader: ObservableObject {
         isLoading = true
         errorMessage = nil
         
-        let task = URLSession.shared.dataTask(with: fetchURL) { data, response, error in
+        let task = URLSession.shared.dataTask(with: fetchURL) { [ weak self ] data, response, error in
             
             DispatchQueue.main.async {
                 
-                self.isLoading = false
+                self?.isLoading = false
                 
                 if let error = error {
-                    self.errorMessage = error.localizedDescription
+                    self?.errorMessage = error.localizedDescription
                 } else if let response = response as? HTTPURLResponse, !(200...299).contains(response.statusCode)  {
-                    self.errorMessage = APIError.badResponse(statusCode: response.statusCode).localizedDescription
+                    self?.errorMessage = APIError.badResponse(statusCode: response.statusCode).localizedDescription
                 } else if let data = data, let image = UIImage(data: data) {
                     
-                    self.image = image
+                    self?.image = image
                     
                 } else {
-                    self.errorMessage = APIError.unknown.localizedDescription
+                    self?.errorMessage = APIError.unknown.localizedDescription
                 }
             }
 

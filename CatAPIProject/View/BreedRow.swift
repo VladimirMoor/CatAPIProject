@@ -16,24 +16,27 @@ struct BreedRow: View {
         HStack {
             
             if breed.image?.url != nil {
+  
+                ImageLoadingView(url: breed.image!.url)
                 
-                AsyncImage(url: URL(string: breed.image!.url!)) { phase in
-
-                    if let image = phase.image {
-                        image.resizable()
-                            .scaledToFill()
-                            .frame(width: imageSize, height: imageSize)
-                            .clipped()
-                    } else if phase.error != nil {
-                        Text(phase.error?.localizedDescription ?? "unknown error")
-                            .foregroundColor(Color.pink)
-                            .frame(width: imageSize, height: imageSize)
-                    } else {
-                        ProgressView()
-                            .frame(width: imageSize, height: imageSize)
-                    }
-
-                }
+                
+//                AsyncImage(url: URL(string: breed.image!.url!)) { phase in
+//
+//                    if let image = phase.image {
+//                        image.resizable()
+//                            .scaledToFill()
+//                            .frame(width: imageSize, height: imageSize)
+//                            .clipped()
+//                    } else if phase.error != nil {
+//                        Text(phase.error?.localizedDescription ?? "unknown error")
+//                            .foregroundColor(Color.pink)
+//                            .frame(width: imageSize, height: imageSize)
+//                    } else {
+//                        ProgressView()
+//                            .frame(width: imageSize, height: imageSize)
+//                    }
+//
+//                }
                 
             } else {
                 Color.gray.frame(width: imageSize, height: imageSize)
@@ -47,9 +50,7 @@ struct BreedRow: View {
                 Text(breed.temperament)
             }
         }
-        .onDisappear {
-            print("\(breed.name) row View is dissapear")
-        }
+
         
         
     }
