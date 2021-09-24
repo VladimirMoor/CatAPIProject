@@ -33,7 +33,10 @@ class ImageLoader: ObservableObject {
         isLoading = true
         errorMessage = nil
         
-        let task = URLSession.shared.dataTask(with: fetchURL) { [ weak self ] data, response, error in
+        
+        let request = URLRequest(url: fetchURL, cachePolicy: .returnCacheDataElseLoad)
+        
+        let task = URLSession.shared.dataTask(with: request) { [ weak self ] data, response, error in
             
             DispatchQueue.main.async {
                 

@@ -16,7 +16,7 @@ struct BreedListView: View {
         if searchText.count == 0 {
             return breeds
         } else {
-            return breeds.filter { $0.name.contains(searchText) }
+            return breeds.filter { $0.name.lowercased().contains(searchText) }
         }
     }
     
@@ -36,6 +36,11 @@ struct BreedListView: View {
         .navigationTitle("Find your favorite cat")
         .searchable(text: $searchText)
       }
+        .onAppear {
+          print("Cache size : \(URLCache.shared.memoryCapacity / 1024) Kb")
+            URLCache.shared.memoryCapacity = 1024 * 1024 * 512
+        }
+        
     }
 }
 
