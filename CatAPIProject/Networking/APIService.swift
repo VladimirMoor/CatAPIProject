@@ -45,9 +45,7 @@ struct APIService {
         task.resume()
         
     }
-    
-    
-    
+
     func fetchBreeds(url: URL?, completion: @escaping(Result<[Breed], APIError>) -> Void ) {
         
         guard let url = url else {
@@ -74,9 +72,7 @@ struct APIService {
                  } catch {
                      
                      completion(Result.failure(APIError.parsing(error as? DecodingError)))
-                     
                  }
-                    
             }
         }
         task.resume()

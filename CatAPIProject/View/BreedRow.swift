@@ -16,8 +16,9 @@ struct BreedRow: View {
         HStack {
             
             if breed.image?.url != nil {
+                
                 AsyncImage(url: URL(string: breed.image!.url!)) { phase in
-                    
+
                     if let image = phase.image {
                         image.resizable()
                             .scaledToFill()
@@ -31,8 +32,9 @@ struct BreedRow: View {
                         ProgressView()
                             .frame(width: imageSize, height: imageSize)
                     }
-                    
+
                 }
+                
             } else {
                 Color.gray.frame(width: imageSize, height: imageSize)
             }
@@ -44,6 +46,9 @@ struct BreedRow: View {
                     .font(.headline)
                 Text(breed.temperament)
             }
+        }
+        .onDisappear {
+            print("\(breed.name) row View is dissapear")
         }
         
         

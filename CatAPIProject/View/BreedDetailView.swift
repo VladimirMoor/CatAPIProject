@@ -39,11 +39,11 @@ struct BreedDetailView: View {
                 }
                 
                 VStack(alignment: .leading, spacing: 15) {
-                Text(breed.name)
-                    .font(.headline)
-                Text(breed.temperament)
-                    .font(.footnote)
-                Text(breed.description)
+                    Text(breed.name)
+                        .font(.headline)
+                    Text(breed.temperament)
+                        .font(.footnote)
+                    Text(breed.description)
                     
                     HStack {
                         

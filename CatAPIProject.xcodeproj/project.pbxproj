@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		317D731226FCC58600093AB5 /* APIMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317D731126FCC58600093AB5 /* APIMockService.swift */; };
+		317D731626FDEB5300093AB5 /* ImageLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317D731526FDEB5300093AB5 /* ImageLoadingView.swift */; };
+		317D731826FDEB7D00093AB5 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317D731726FDEB7D00093AB5 /* ImageLoader.swift */; };
 		31EEA0B426FB522A00B73D84 /* CatAPIProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EEA0B326FB522A00B73D84 /* CatAPIProjectApp.swift */; };
 		31EEA0B626FB522A00B73D84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EEA0B526FB522A00B73D84 /* ContentView.swift */; };
 		31EEA0B826FB522C00B73D84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31EEA0B726FB522C00B73D84 /* Assets.xcassets */; };
 		31EEA0BB26FB522C00B73D84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31EEA0BA26FB522C00B73D84 /* Preview Assets.xcassets */; };
-		31EEA0C526FB522C00B73D84 /* CatAPIProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EEA0C426FB522C00B73D84 /* CatAPIProjectTests.swift */; };
-		31EEA0CF26FB522C00B73D84 /* CatAPIProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EEA0CE26FB522C00B73D84 /* CatAPIProjectUITests.swift */; };
-		31EEA0D126FB522C00B73D84 /* CatAPIProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EEA0D026FB522C00B73D84 /* CatAPIProjectUITestsLaunchTests.swift */; };
 		31EEA0E126FB540A00B73D84 /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EEA0E026FB540A00B73D84 /* Breed.swift */; };
 		31EEA0E326FB55DF00B73D84 /* BreedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EEA0E226FB55DF00B73D84 /* BreedImage.swift */; };
 		31EEA0E526FB564500B73D84 /* BreedFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EEA0E426FB564500B73D84 /* BreedFetcher.swift */; };
@@ -45,17 +43,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		317D731126FCC58600093AB5 /* APIMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMockService.swift; sourceTree = "<group>"; };
+		317D731526FDEB5300093AB5 /* ImageLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadingView.swift; sourceTree = "<group>"; };
+		317D731726FDEB7D00093AB5 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		31EEA0B026FB522A00B73D84 /* CatAPIProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatAPIProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31EEA0B326FB522A00B73D84 /* CatAPIProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatAPIProjectApp.swift; sourceTree = "<group>"; };
 		31EEA0B526FB522A00B73D84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		31EEA0B726FB522C00B73D84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31EEA0BA26FB522C00B73D84 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		31EEA0C026FB522C00B73D84 /* CatAPIProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatAPIProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		31EEA0C426FB522C00B73D84 /* CatAPIProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatAPIProjectTests.swift; sourceTree = "<group>"; };
 		31EEA0CA26FB522C00B73D84 /* CatAPIProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatAPIProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		31EEA0CE26FB522C00B73D84 /* CatAPIProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatAPIProjectUITests.swift; sourceTree = "<group>"; };
-		31EEA0D026FB522C00B73D84 /* CatAPIProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatAPIProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		31EEA0E026FB540A00B73D84 /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
 		31EEA0E226FB55DF00B73D84 /* BreedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedImage.swift; sourceTree = "<group>"; };
 		31EEA0E426FB564500B73D84 /* BreedFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedFetcher.swift; sourceTree = "<group>"; };
@@ -97,8 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				31EEA0B226FB522A00B73D84 /* CatAPIProject */,
-				31EEA0C326FB522C00B73D84 /* CatAPIProjectTests */,
-				31EEA0CD26FB522C00B73D84 /* CatAPIProjectUITests */,
 				31EEA0B126FB522A00B73D84 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -135,23 +129,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		31EEA0C326FB522C00B73D84 /* CatAPIProjectTests */ = {
-			isa = PBXGroup;
-			children = (
-				31EEA0C426FB522C00B73D84 /* CatAPIProjectTests.swift */,
-			);
-			path = CatAPIProjectTests;
-			sourceTree = "<group>";
-		};
-		31EEA0CD26FB522C00B73D84 /* CatAPIProjectUITests */ = {
-			isa = PBXGroup;
-			children = (
-				31EEA0CE26FB522C00B73D84 /* CatAPIProjectUITests.swift */,
-				31EEA0D026FB522C00B73D84 /* CatAPIProjectUITestsLaunchTests.swift */,
-			);
-			path = CatAPIProjectUITests;
-			sourceTree = "<group>";
-		};
 		31EEA0DD26FB53BE00B73D84 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +137,7 @@
 				31EEA0F226FCA91900B73D84 /* BreedDetailView.swift */,
 				31EEA0E826FB596F00B73D84 /* ErrorView.swift */,
 				31EEA0EA26FB598800B73D84 /* LoadingView.swift */,
+				317D731526FDEB5300093AB5 /* ImageLoadingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,7 +157,7 @@
 				31EEA0E426FB564500B73D84 /* BreedFetcher.swift */,
 				31EEA0EC26FB76AD00B73D84 /* APIError.swift */,
 				31EEA0EE26FB7E5900B73D84 /* APIService.swift */,
-				317D731126FCC58600093AB5 /* APIMockService.swift */,
+				317D731726FDEB7D00093AB5 /* ImageLoader.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -314,6 +292,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				317D731826FDEB7D00093AB5 /* ImageLoader.swift in Sources */,
+				317D731626FDEB5300093AB5 /* ImageLoadingView.swift in Sources */,
 				31EEA0E326FB55DF00B73D84 /* BreedImage.swift in Sources */,
 				31EEA0E126FB540A00B73D84 /* Breed.swift in Sources */,
 				31EEA0B626FB522A00B73D84 /* ContentView.swift in Sources */,
@@ -321,7 +301,6 @@
 				31EEA0F326FCA91900B73D84 /* BreedDetailView.swift in Sources */,
 				31EEA0E526FB564500B73D84 /* BreedFetcher.swift in Sources */,
 				31EEA0E926FB596F00B73D84 /* ErrorView.swift in Sources */,
-				317D731226FCC58600093AB5 /* APIMockService.swift in Sources */,
 				31EEA0EB26FB598800B73D84 /* LoadingView.swift in Sources */,
 				31EEA0EF26FB7E5900B73D84 /* APIService.swift in Sources */,
 				31EEA0B426FB522A00B73D84 /* CatAPIProjectApp.swift in Sources */,
@@ -334,7 +313,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31EEA0C526FB522C00B73D84 /* CatAPIProjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,8 +320,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31EEA0D126FB522C00B73D84 /* CatAPIProjectUITestsLaunchTests.swift in Sources */,
-				31EEA0CF26FB522C00B73D84 /* CatAPIProjectUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
